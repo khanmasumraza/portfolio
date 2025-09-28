@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masum | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h2 class="logo">Masum</h2>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 id="hero-text">Hi, I’m <span class="gradient">Masum</span> 👋</h1>
+    <p class="subtitle"><span id="typing-text"></span></p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="assets/resume.pdf" download class="btn-outline">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-inner">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p class="about-intro">
+          I’m <strong>Masum Raza</strong>, a Frontend Web Developer with a strong foundation in JavaScript and practical experience in React basics. I love building smooth, responsive, and interactive UIs that feel modern and user-friendly.
+        </p>
+        <ul class="about-highlights">
+          <li><strong>Core Skills:</strong> JavaScript (ES6+), React (components, state basics), HTML5, CSS3</li>
+          <li><strong>Projects:</strong> 🎬 Movie App Clone | 🍔 Swiggy Clone | 🖼️ Stock Image | 🍉 Zomato Clone</li>
+          <li><strong>Other Projects:</strong> Music Player, QR Code Generator, Notes Generator, Thumbnail Changer</li>
+<li><strong>Other Skills:</strong> DOM Manipulation, API Integration, Responsive UI</li>
+
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+    
+      <div class="project-card">
+        <img src="assets/proj1.png" alt="Movie App Clone">
+        <h3> Stock Image Generator</h3>
+        <p> API Itegration</p>
+           <a href="https://github.com/khanmasumraza/stock-image-ui" target="_blank" class="btn-small">View Project</a>
+      </div>
+    
+      <div class="project-card">
+        <img src="assets/proj2.png" alt="Swiggy Clone">
+        <h3>🍔 Movie UI</h3>
+        <p>API Integration + UI</p>
+       <a href="https://github.com/khanmasumraza/movie-page" target="_blank" class="btn-small">View Project</a>
+      </div>
+    
+      <div class="project-card">
+        <img src="assets/proj3.png" alt="Zomato Clone">
+        <h3>🖼️ Swiggy Clone</h3>
+        <p>Clone of Swiggy</p>
+       <a href="https://github.com/khanmasumraza/swiggy-clone" target="_blank" class="btn-small">View Project</a>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span class="skill">JavaScript</span>
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">React</span>
+      <span class="skill">API</span>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <p>Feel free to reach out via email or social media.</p>
+  <p>Email: <a href="mailto:bcamasum@gmail.com" class="contact-email">bcamasum@gmail.com</a></p>
+  <div class="contact-buttons">
+    <a href="mailto:bcamasum@gmail.com" class="btn">Send Email</a>
+    <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" class="btn-outline">LinkedIn</a>
+      <a href="https://github.com/khanmasumraza" target="_blank" class="btn-outline">GitHub</a>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Masum. All rights reserved.</p>
+  </footer>
+
+  <!-- Project Modal -->
+<div id="project-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modal-title">Project Title</h3>
+    <p id="modal-description">Project description and skills used.</p>
+    <a id="modal-link" href="#" target="_blank" class="btn-small">View Live / GitHub</a>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
