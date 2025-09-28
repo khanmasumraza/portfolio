@@ -48,3 +48,36 @@ projects.forEach(p => {
   `;
   projectList.appendChild(card);
 });
+
+
+// contact
+
+// Smooth scroll for nav links (works for About link too)
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    const targetId = this.getAttribute('href').slice(1);
+    const target = document.getElementById(targetId);
+    if (target) {
+      e.preventDefault();
+      window.scrollTo({
+        top: target.getBoundingClientRect().top + window.scrollY - 70, // offset for fixed navbar
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
+// Simple reveal when About section enters viewport
+const aboutSection = document.getElementById('about');
+const revealObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('reveal-visible');
+    }
+  });
+}, { threshold: 0.15 });
+
+if (aboutSection) revealObserver.observe(aboutSection);
+
+
+//
